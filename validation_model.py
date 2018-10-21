@@ -28,16 +28,6 @@ class ValidationModel:
             img = array(img)
         else:
             img = part_card
-        
-        origin_height, origin_width = img.shape[:2]
-        for i in range(0, origin_height):
-            for j in range(0, origin_width):
-                if(img[i, j]!=0):
-                    a=1
-                if img[i, j] < 128:
-                    img[i, j] = 0
-                else:
-                    img[i, j] = 255
                     
         img = self.image_trim(img)
         origin_height, origin_width = img.shape[:2]

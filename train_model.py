@@ -149,4 +149,4 @@ class TrainModel:
 
 if __name__ == '__main__':
     m = TrainModel()
-    m.start_train(500)
+    m.start_train(50)

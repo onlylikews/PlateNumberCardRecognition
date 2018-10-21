@@ -43,7 +43,7 @@ class Recognizer:
             card_color = card_image_model.color
             part_cards = card_image_model.part_cards
             v = ValidationModel()
-            v.is_save_temp_data = True
+            v.is_save_temp_data = False
             for i, part_card in enumerate(part_cards):
 #                 cv2.imwrite('temp_result_data/test_%s.bmp' % i, part_card)
 #                 show_test_img(part_card)
@@ -484,5 +484,5 @@ def show_test_img(img):
 
 if __name__ == '__main__':
     c = Recognizer()
-    card_result, card_img_model, card_color = c.start("test_image/29.jpg")
+    card_result, card_img_model, card_color = c.start("test_image/2.jpg")
     print(card_result)

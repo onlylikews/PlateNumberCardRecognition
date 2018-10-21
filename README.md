@@ -9,5 +9,6 @@ validation_model.py	验证模型和识别字符的类
 train_data			训练数据文件夹  
 validation_data		验证数据文件夹  
 temp_result_data	临时存放分割字符后的文件夹  
+model_saver			保存训练后模型的文件夹
 
 另外，目前省份数据稀缺，还不支持识别省份。

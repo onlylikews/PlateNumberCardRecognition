@@ -161,8 +161,7 @@ def show_test_img(img):
     plt.show()
 
 if __name__ == '__main__':
-    path = "test_image/11.bmp"
-    path = "train_data/5/1509807306_562_6.bmp"
+    path = "test_image/1509807306_562_6.bmp"
     m = ValidationModel()
     m.is_save_temp_data = True
     result = m.recognize(path)
